@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Employee Dashboard - ProjectHub</title>
+
+    <link rel="stylesheet" href="empoyee web3.css">
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+
+    <aside class="sidebar">
+
+        <div class="logo">
+            ProjectHub
+        </div>
+
+        <nav>
+
+            <a href="#" class="nav-link active">
+                🏠 Dashboard
+            </a>
+
+            <a href="#" class="nav-link">
+                📁 My Projects
+            </a>
+
+            <a href="#" class="nav-link">
+                📝 Project Updates
+            </a>
+
+            <a href="#" class="nav-link">
+                👤 My Profile
+            </a>
+
+        </nav>
+
+        <button class="logout-btn" onclick="logout()">
+            🚪 Logout
+        </button>
+
+    </aside>
+
+
+    <!-- Main Content -->
+
+    <main class="main-content">
+
+        <!-- Top Bar -->
+
+        <header class="topbar">
+
+            <div>
+                <h1>Employee Dashboard</h1>
+                <p>Manage your projects and keep your team updated.</p>
+            </div>
+
+            <div class="user-info">
+
+                <div class="avatar">
+                    N
+                </div>
+
+                <div>
+                    <strong>Nikhil Pandey</strong>
+                    <small>Employee</small>
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- Statistics -->
+
+        <section class="stats">
+
+            <div class="stat-card">
+
+                <div class="stat-icon">
+                    📁
+                </div>
+
+                <div>
+                    <p>Total Projects</p>
+                    <h2>4</h2>
+                </div>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <div class="stat-icon">
+                    🔄
+                </div>
+
+                <div>
+                    <p>In Progress</p>
+                    <h2>2</h2>
+                </div>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <div class="stat-icon">
+                    ✅
+                </div>
+
+                <div>
+                    <p>Completed</p>
+                    <h2>1</h2>
+                </div>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <div class="stat-icon">
+                    ⏳
+                </div>
+
+                <div>
+                    <p>Pending</p>
+                    <h2>1</h2>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Projects -->
+
+        <section class="project-section">
+
+            <div class="section-header">
+
+                <div>
+                    <h2>My Projects</h2>
+                    <p>Your current assigned projects</p>
+                </div>
+
+                <button class="update-btn"
+                    onclick="openUpdateForm()">
+                    + Post Project Update
+                </button>
+
+            </div>
+
+
+            <div class="project-table">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+                            <th>Project</th>
+                            <th>Status</th>
+                            <th>Progress</th>
+                            <th>Last Updated</th>
+                            <th>Action</th>
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+
+                            <td>
+                                <strong>Employee Management System</strong>
+                                <small>Web Application</small>
+                            </td>
+
+                            <td>
+                                <span class="status progress">
+                                    In Progress
+                                </span>
+                            </td>
+
+                            <td>
+
+                                <div class="progress-container">
+
+                                    <div class="progress-bar">
+                                        <div
+                                            class="progress-value"
+                                            style="width: 70%;">
+                                        </div>
+                                    </div>
+
+                                    <span>70%</span>
+
+                                </div>
+
+                            </td>
+
+                            <td>
+                                11 Aug 2026
+                            </td>
+
+                            <td>
+                                <button class="view-btn">
+                                    View
+                                </button>
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>
+                                <strong>Company Website</strong>
+                                <small>Frontend Development</small>
+                            </td>
+
+                            <td>
+                                <span class="status completed">
+                                    Completed
+                                </span>
+                            </td>
+
+                            <td>
+
+                                <div class="progress-container">
+
+                                    <div class="progress-bar">
+                                        <div
+                                            class="progress-value"
+                                            style="width: 100%;">
+                                        </div>
+                                    </div>
+
+                                    <span>100%</span>
+
+                                </div>
+
+                            </td>
+
+                            <td>
+                                08 Aug 2026
+                            </td>
+
+                            <td>
+                                <button class="view-btn">
+                                    View
+                                </button>
+                            </td>
+
+                        </tr>
+
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+
+        <!-- Recent Updates -->
+
+        <section class="updates-section">
+
+            <div class="section-header">
+
+                <div>
+                    <h2>Recent Updates</h2>
+                    <p>Your latest project activities</p>
+                </div>
+
+            </div>
+
+
+            <div class="update-card">
+
+                <div class="update-date">
+                    11
+                    <small>Aug</small>
+                </div>
+
+                <div class="update-content">
+
+                    <h3>Employee Management System</h3>
+
+                    <p>
+                        Completed employee login UI and started
+                        backend authentication.
+                    </p>
+
+                    <span>
+                        Progress: 70%
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="update-card">
+
+                <div class="update-date">
+                    08
+                    <small>Aug</small>
+                </div>
+
+                <div class="update-content">
+
+                    <h3>Company Website</h3>
+
+                    <p>
+                        Completed responsive homepage and
+                        navigation menu.
+                    </p>
+
+                    <span>
+                        Progress: 100%
+                    </span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Project Update Popup -->
+
+    <div id="updateModal" class="modal">
+
+        <div class="modal-content">
+
+            <div class="modal-header">
+
+                <h2>Post Project Update</h2>
+
+                <button onclick="closeUpdateForm()">
+                    ✕
+                </button>
+
+            </div>
+
+
+            <form id="updateForm">
+
+                <label>Project Name</label>
+
+                <input
+                    type="text"
+                    placeholder="Enter project name"
+                    required>
+
+
+                <label>Project Status</label>
+
+                <select required>
+
+                    <option value="">
+                        Select status
+                    </option>
+
+                    <option>
+                        Not Started
+                    </option>
+
+                    <option>
+                        In Progress
+                    </option>
+
+                    <option>
+                        Completed
+                    </option>
+
+                    <option>
+                        On Hold
+                    </option>
+
+                </select>
+
+
+                <label>Progress (%)</label>
+
+                <input
+                    type="number"
+                    min="0"
+                    max="100"
+                    placeholder="Example: 70"
+                    required>
+
+
+                <label>Today's Work</label>
+
+                <textarea
+                    placeholder="Describe what you completed today..."
+                    required>
+                </textarea>
+
+
+                <label>Challenges / Problems</label>
+
+                <textarea
+                    placeholder="Any problems or challenges?">
+                </textarea>
+
+
+                <label>Next Steps</label>
+
+                <textarea
+                    placeholder="What will you work on next?">
+                </textarea>
+
+
+                <button
+                    type="submit"
+                    class="submit-update">
+                    Post Update
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+    <script src="employee web4.js"></script>
+
+</body>
+
+</html>

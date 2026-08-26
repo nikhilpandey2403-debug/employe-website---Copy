@@ -1,0 +1,316 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f7fb;
+    min-height: 100vh;
+}
+
+
+/* Main Container */
+
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+
+/* Left Section */
+
+.welcome-section {
+    width: 55%;
+    background: linear-gradient(135deg, #2563eb, #1e40af);
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 60px;
+}
+
+.welcome-content {
+    max-width: 550px;
+}
+
+.welcome-content h1 {
+    font-size: 22px;
+    margin-bottom: 50px;
+    letter-spacing: 1px;
+}
+
+.welcome-content h2 {
+    font-size: 42px;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.welcome-content p {
+    font-size: 18px;
+    line-height: 1.7;
+    opacity: 0.9;
+}
+
+
+/* Features */
+
+.features {
+    margin-top: 35px;
+}
+
+.features div {
+    margin: 15px 0;
+    font-size: 16px;
+}
+
+
+/* Login Section */
+
+.login-section {
+    width: 45%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 30px;
+}
+
+.login-box {
+    width: 100%;
+    max-width: 430px;
+
+    background: voilet;
+
+    padding: 40px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.08);
+}
+
+.login-box h2 {
+    font-size: 28px;
+    color: #1f2937;
+    margin-bottom: 8px;
+}
+
+.login-subtitle {
+    color: #6b7280;
+    margin-bottom: 25px;
+}
+
+
+/* Role Selection */
+
+.role-selection {
+    display: flex;
+
+    background: #f1f5f9;
+
+    padding: 5px;
+
+    border-radius: 8px;
+
+    margin-bottom: 25px;
+}
+
+.role-btn {
+    width: 50%;
+
+    border: none;
+
+    padding: 12px;
+
+    background: transparent;
+
+    border-radius: 6px;
+
+    cursor: pointer;
+
+    font-size: 14px;
+
+    color: #202833;
+}
+
+.role-btn.active {
+    background: rgb(165, 85, 85);
+
+    color: #25eb56;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+
+    font-weight: bold;
+}
+
+
+/* Input */
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    color: #212935;
+}
+
+.input-group input {
+    width: 100%;
+
+    padding: 13px;
+
+    border: 1px solid #d1d5db;
+
+    border-radius: 7px;
+
+    font-size: 15px;
+
+    outline: none;
+}
+
+.input-group input:focus {
+    border-color: #25eb71;
+
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+
+/* Password */
+
+.password-box {
+    position: relative;
+}
+
+.password-box input {
+    padding-right: 45px;
+}
+
+.show-password {
+    position: absolute;
+
+    right: 10px;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    border: none;
+
+    background: none;
+
+    cursor: pointer;
+
+    font-size: 16px;
+}
+
+.login-btn {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* Login Options */
+
+.login-options {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 25px;
+
+    font-size: 13px;
+
+    color: #1c2430;
+}
+
+.login-options a {
+    color: #51e94c;
+
+    text-decoration: none;
+}
+
+
+/* Login Button */
+
+.login-btn {
+    width: 100%;
+
+    padding: 14px;
+
+    border: none;
+
+    border-radius: 7px;
+
+    background: #527bd3;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.login-btn:hover {
+    background: #6ae24c;
+
+    transform: translateY(-1px);
+}
+
+
+/* Message */
+
+#message {
+    text-align: center;
+
+    margin-top: 15px;
+
+    font-size: 14px;
+}
+
+
+/* Responsive Design */
+
+@media (max-width: 800px) {
+
+    .container {
+        flex-direction: column;
+    }
+
+    .welcome-section {
+        width: 100%;
+
+        padding: 40px 25px;
+    }
+
+    .welcome-content h2 {
+        font-size: 32px;
+    }
+
+    .login-section {
+        width: 100%;
+
+        padding: 25px;
+    }
+
+    .login-box {
+        padding: 30px;
+    }
+}
